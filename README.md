@@ -4,6 +4,9 @@ Projeto desenvolvido durante uma aula de JavaScript intermediario da Rocketseat.
 A aplicacao representa uma tela de solicitacao de reembolso, onde o usuario pode
 informar uma despesa, selecionar uma categoria e visualizar suas solicitacoes.
 
+<img width="1081" height="605" alt="image" src="https://github.com/user-attachments/assets/972bb8c2-7595-4913-bfe6-edd8a399c0d8" />
+
+
 ## Sobre o projeto
 
 O Refund e uma interface para cadastro de despesas reembolsaveis. A proposta da
