@@ -1,17 +1,19 @@
 # Refund
 
-Projeto desenvolvido durante uma aula de JavaScript intermediario da Rocketseat.
-A aplicacao representa uma tela de solicitacao de reembolso, onde o usuario pode
-informar uma despesa, selecionar uma categoria e visualizar suas solicitacoes.
+Projeto desenvolvido durante o curso Fullstack da Rocketseat, com foco principal
+em JavaScript. A aplicacao simula uma tela de solicitacao de reembolso, onde o
+usuario pode cadastrar despesas, escolher categorias, acompanhar a lista de
+solicitacoes e visualizar o total atualizado automaticamente.
 
 <img width="1081" height="605" alt="image" src="https://github.com/user-attachments/assets/972bb8c2-7595-4913-bfe6-edd8a399c0d8" />
 
 
 ## Sobre o projeto
 
-O Refund e uma interface para cadastro de despesas reembolsaveis. A proposta da
-aula e praticar a manipulacao de dados da pagina com JavaScript, usando uma base
-visual construida com HTML e CSS.
+O Refund e uma interface para cadastro de despesas reembolsaveis. A base visual
+foi construida com HTML e CSS, enquanto o JavaScript concentra a parte dinamica
+da aplicacao: leitura dos dados do formulario, criacao de itens na tela,
+formatacao de valores, atualizacao do resumo e remocao de despesas.
 
 Na tela principal, o usuario encontra:
 
@@ -20,6 +22,19 @@ Na tela principal, o usuario encontra:
 - campo para valor;
 - area lateral com a lista de solicitacoes;
 - resumo com quantidade de despesas e valor total.
+
+## Destaques do JavaScript
+
+O arquivo `script.js` e responsavel pelo comportamento da aplicacao. Nele foram
+praticados conceitos importantes do JavaScript no navegador, como:
+
+- captura e validacao de dados do formulario;
+- formatacao de valores em moeda brasileira;
+- manipulacao da DOM com criacao dinamica de elementos;
+- uso de eventos de formulario e clique;
+- atualizacao automatica da quantidade de despesas;
+- calculo do valor total conforme os itens sao adicionados ou removidos;
+- limpeza dos campos apos o cadastro de uma despesa.
 
 ## Tecnologias
 
@@ -41,6 +56,7 @@ Na tela principal, o usuario encontra:
 │   ├── services.svg
 │   └── transport.svg
 ├── index.html
+├── script.js
 ├── styles.css
 └── README.md
 ```
@@ -54,11 +70,11 @@ o projeto em ambiente local.
 
 ## Objetivo de aprendizado
 
-Este projeto faz parte dos estudos de JavaScript intermediario e tem como foco
-praticar conceitos como:
+Este projeto faz parte dos estudos do curso Fullstack da Rocketseat e reforca,
+principalmente, a pratica de JavaScript aplicado a uma interface real. O objetivo
+foi entender como transformar uma tela estatica em uma experiencia interativa,
+respondendo as acoes do usuario e mantendo os dados exibidos sempre atualizados.
 
-- captura de dados de formulario;
-- manipulacao da DOM;
-- criacao dinamica de itens na tela;
-- atualizacao de totais;
-- remocao de despesas da lista.
+Durante o desenvolvimento, o foco esteve em organizar a logica da aplicacao,
+trabalhar com eventos, manipular elementos HTML via DOM e controlar os valores
+das despesas diretamente pelo JavaScript.
