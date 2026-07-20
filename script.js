@@ -49,6 +49,15 @@ form.onsubmit = (event) => {
 // Adicionar despesa
 const expenseAdd = (newExpense) => {
   try {
+
+    // Verificar se o ammount é 0
+    const cleanedAmount = Number(newExpense.amount.replace(/\D/g, "")) / 100;
+
+    if (cleanedAmount <= 0) {
+      alert("Insira uma despesa de valor maior que R$0,00");
+      return;
+    }
+
     //Criar o elemento li
     const expenseItem = document.createElement("li");
     expenseItem.classList.add("expense");
@@ -138,5 +147,5 @@ const onClearField = () => {
   expense.value = "";
   category.value = "";
 
-  expense.focus()
+  expense.focus();
 };
